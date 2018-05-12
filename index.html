@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title></title>
+    <meta charset="utf-8">
+
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1">
+    <link rel = "stylesheet" href = "paulperz.css" />
+    <link rel = "stylesheet" href="jquery.mobile.icons.min.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src = "paulperz.js"></script>
+</head>
+
+<body>
+
+    <section id="firstpage" data-role="page">
+        <input id="address" type="text" placeholder="Enter the address.">
+        <a href = "#secondpage"><button class="btn-success" id="getCoordinates">Get Coordinates</button></a>
+        <button id="setFavorite">Set Favorite</button>
+        <button id="useFavorite">Use Favorite</button>
+    </section>
+    <section id = "secondpage" data-role="page">
+        <header data-role="header" data-position="fixed" data-fullscreen="true">
+            <a href="#firstpage" class="ui-btn-right" id = "home">Home</a>
+        </header>
+        <br>
+        <div id = "success"></div>
+        <div id = "errors"></div>
+    </section>
+
+</body>
+</html>
