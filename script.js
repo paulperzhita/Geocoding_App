@@ -41,9 +41,10 @@ $(document).ready(function() {
                     $('#success').append("Longitude: " + JSON.stringify(location["lng"]));
                     $('#success').append("<br>");
                     $('#success').append("<br>");
-                    console.log(response)
 
                 }
+
+                console.log(response)
 
             },
 
@@ -55,10 +56,9 @@ $(document).ready(function() {
 
     }); //end of click function
 
-    $('#home').click(function(){
+    $('#back').click(function(){
 
         $("#success").text("");
-
 
     });
 
